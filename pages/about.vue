@@ -1,14 +1,5 @@
 <template>
-	<div>
-		<p>This page will be displayed at the /about route.</p>
-	</div>
-	<div>
-		<button @click="enableCustomLayout">Update Layout</button>
-	</div>
+	<article class="prose dard:prose-invert">
+		<ContentDoc path="/about" />
+	</article>
 </template>
-
-<script setup>
-useHead({
-	title: 'About',
-})
-</script>

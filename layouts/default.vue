@@ -13,6 +13,10 @@
 </template>
 
 <script setup>
+const colorMode = useColorMode()
+console.log(colorMode.preference)
+colorMode.Preference = 'light'
+
 useHead({
 	titleTemplate: '%s - Eric Uen',
 	link: [
@@ -33,5 +37,8 @@ useHead({
 body {
 	font-family: 'Roboto';
 	/* font-family: 'Noto+Sans+TC'; */
+}
+body {
+	@apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>
